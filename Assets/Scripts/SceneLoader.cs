@@ -9,4 +9,16 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void nextScene()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        SceneManager.LoadScene(currentScene + 1);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

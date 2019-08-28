@@ -414,7 +414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.7, y: -11.7}
+  m_AnchoredPosition: {x: 5.699951, y: -11.699951}
   m_SizeDelta: {x: -1802, y: -1039.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986198714
@@ -501,7 +501,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 986198714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1793312174}
+        m_MethodName: nextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1453569372
@@ -539,7 +550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.3, y: -73.8}
+  m_AnchoredPosition: {x: 6.300049, y: -73.79999}
   m_SizeDelta: {x: -1803.2, y: -1041.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1453569374
@@ -626,7 +637,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1453569374}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1793312174}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1793312173
@@ -698,6 +720,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8bd07bd45335c54481af5dd201ac418, type: 3}
+--- !u!114 &1793312174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5452407987875868665, guid: b8bd07bd45335c54481af5dd201ac418,
+    type: 3}
+  m_PrefabInstance: {fileID: 1793312173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b21d4fcf1b8894f9661d2f282a63b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1814678446
 GameObject:
   m_ObjectHideFlags: 0
