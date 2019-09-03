@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: cc215c6ba129c484093d95c61474b424
+guid: 14677ce09bd5c0144b666c6b506312df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1863520787845908191
-    second: Little Mario walk
+      213: -5634374682147230726
+    second: Little Mario walk_0
   - first:
-      213: 8956254178164058287
-    second: Big Mario walk
+      213: -7039160660113209629
+    second: Little Mario walk_1
   - first:
-      213: -6165800981854451316
-    second: Little Luigi walk
-  - first:
-      213: -4862895370882457561
-    second: Luigi walk
-  - first:
-      213: 8162911610314104622
-    second: Little fire Mario walk
-  - first:
-      213: -9012016523653985482
-    second: Fire Mario walk
+      213: -518123468132313538
+    second: Little Mario walk_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -64,7 +55,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 256
-  spriteBorder: {x: 80, y: 637, z: 130, w: 34}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -128,127 +119,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Little Mario walk
+      name: Little Mario walk_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 636
-        width: 52
-        height: 18
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222f26eda24df4a49b52d946caa981fd
-      internalID: 1863520787845908191
+      spriteID: a51789875a7d7be439cb37dcd37ea73d
+      internalID: -5634374682147230726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big Mario walk
+      name: Little Mario walk_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 653
-        width: 52
-        height: 34
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9078635180cca7d439db76e490cc0e3d
-      internalID: 8956254178164058287
+      spriteID: e674883c8623e6842979f8a611b4a7bf
+      internalID: -7039160660113209629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Little Luigi walk
+      name: Little Mario walk_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 571
-        width: 52
-        height: 18
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e79f21ebf96ec94fbc910a70cfb67cb
-      internalID: -6165800981854451316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luigi walk
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 588
-        width: 52
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85ba13256a8fb2f40a5cd8b572ac43af
-      internalID: -4862895370882457561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Little fire Mario walk
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 508
-        width: 52
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e06a32eafdb5684f92b8c99eb8046db
-      internalID: 8162911610314104622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Mario walk
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 525
-        width: 52
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74ab5abcd72478e4eb8952cb18336a75
-      internalID: -9012016523653985482
+      spriteID: f9a2f12c335acf2439579ff9fd957b17
+      internalID: -518123468132313538
       vertices: []
       indices: 
       edges: []
