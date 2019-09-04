@@ -14,6 +14,6 @@ public class Attacker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * Time.deltaTime * speed);
+        transform.Translate(speed * Time.deltaTime * Vector2.left);
     }
 }
