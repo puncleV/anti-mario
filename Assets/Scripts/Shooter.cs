@@ -3,11 +3,10 @@
 public class Shooter : MonoBehaviour
 {
     [SerializeField] private GameObject projectile;
+    [SerializeField] private GameObject gun;
     public void Fire()
     {
-        Instantiate(projectile, new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z),
+        Instantiate(projectile, gun.transform.position,
             Quaternion.identity);
-        
-
     }
 }
