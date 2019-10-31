@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7923664359739588123}
   - component: {fileID: 6780044755763724016}
   - component: {fileID: 3813923956237425187}
+  - component: {fileID: 312023359290730270}
   m_Layer: 0
   m_Name: Little Mario
   m_TagString: Untagged
@@ -182,3 +183,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &312023359290730270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822491277815809603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912d5b2e9a080d944b359dc6a26586ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100

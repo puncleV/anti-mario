@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1698025770541927570}
   - component: {fileID: -1074370094530143569}
   - component: {fileID: 5075279666229324960}
+  - component: {fileID: 7670464134600740974}
   m_Layer: 0
   m_Name: Defender Projectile
   m_TagString: Untagged
@@ -95,7 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29cde495c07bc9408321998298f956c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
   speed: 5
 --- !u!58 &-1074370094530143569
 CircleCollider2D:
@@ -134,3 +134,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7670464134600740974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8390704895793213380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82de3e383a3d0d479605b9cb4fe0f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100

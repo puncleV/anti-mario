@@ -10,34 +10,4 @@ public class Attacker : MonoBehaviour
     {
         transform.Translate(speed * Time.deltaTime * Vector2.left);
     }
-    
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        Projectile damageDealer = collider.gameObject.GetComponent<Projectile>();
-
-        if (!damageDealer)
-        {
-            return;
-        }
-
-        handleHit(damageDealer);
-    }
-
-    private void handleHit(Projectile projectile)
-    {
-        hp -= projectile.Damage;
-        
-        projectile.hit();
-
-        if (hp <= 0)
-        {
-            die();
-        }
-    }
-
-    private void die()
-    {
-//        AudioSource.PlayClipAtPoint(deathSound, transform.position);
-        Destroy(gameObject);
-    }
 }
