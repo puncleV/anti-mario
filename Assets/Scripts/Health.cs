@@ -9,6 +9,10 @@ public class Health : MonoBehaviour
     public void DealDamage(int damage)
     {
         hp -= damage;
-        // play sound maybe
+        
+        if (hp <= 0)
+        {
+            Destroy(gameObject);    
+        }
     }
 }
