@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2822491277815809629}
   - component: {fileID: 2822491277815809602}
   - component: {fileID: 7923664359739588123}
+  - component: {fileID: 6780044755763724016}
+  - component: {fileID: 3813923956237425187}
   m_Layer: 0
   m_Name: Little Mario
   m_TagString: Untagged
@@ -115,3 +117,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  hp: 100
+--- !u!60 &6780044755763724016
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822491277815809603}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.0625, y: 0.0625}
+    newSize: {x: 0.0625, y: 0.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.01953125, y: 0.03125}
+      - {x: 0.01362176, y: 0.027235776}
+      - {x: -0.012496524, y: 0.028239327}
+      - {x: -0.02734375, y: 0.015625}
+      - {x: -0.019778688, y: 0.00022652997}
+      - {x: -0.022211932, y: -0.007833565}
+      - {x: -0.012131082, y: -0.021883424}
+      - {x: -0.0085782185, y: -0.030915484}
+      - {x: 0.015625, y: -0.03125}
+      - {x: 0.02713727, y: -0.028820515}
+      - {x: 0.027773753, y: -0.018733166}
+      - {x: 0.024776254, y: -0.01761036}
+      - {x: 0.025595918, y: -0.00680385}
+      - {x: 0.01347965, y: 0.0014234901}
+      - {x: 0.020417316, y: 0.0014589449}
+      - {x: 0.021499235, y: 0.0149750775}
+      - {x: 0.017692901, y: 0.019088736}
+      - {x: 0.01665001, y: 0.02444105}
+--- !u!50 &3813923956237425187
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822491277815809603}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

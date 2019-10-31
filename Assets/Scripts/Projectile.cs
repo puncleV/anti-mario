@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
@@ -10,5 +8,16 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * Vector2.right);
+    }
+    
+    public int Damage
+    {
+        get => damage;
+        set => damage = value;
+    }
+
+    public void hit()
+    {
+        Destroy(gameObject);
     }
 }
