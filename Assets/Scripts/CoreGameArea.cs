@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 public class CoreGameArea : MonoBehaviour
@@ -7,7 +8,6 @@ public class CoreGameArea : MonoBehaviour
     private void OnMouseDown()
     {
         SpawnDefender(GetSquareClicked());
-        Debug.Log(GetSquareClicked());
     }
 
     private Vector2 GetSquareClicked()
@@ -15,7 +15,7 @@ public class CoreGameArea : MonoBehaviour
         Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
 
-        return worldPos;
+        return new Vector2((float) Math.Round(worldPos.x), (float) Math.Round(worldPos.y));
     }
     private void SpawnDefender(Vector2 coordinates)
     {
