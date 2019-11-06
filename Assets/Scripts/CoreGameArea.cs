@@ -6,11 +6,19 @@ public class CoreGameArea : MonoBehaviour
     [SerializeField] private GameObject defender;
     private void OnMouseDown()
     {
-        SpawnDefender();
+        SpawnDefender(GetSquareClicked());
+        Debug.Log(GetSquareClicked());
     }
 
-    private void SpawnDefender()
+    private Vector2 GetSquareClicked()
     {
-        GameObject newDefender = Instantiate(defender, transform.position, Quaternion.identity);
+        Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
+
+        return worldPos;
+    }
+    private void SpawnDefender(Vector2 coordinates)
+    {
+        GameObject newDefender = Instantiate(defender, new Vector3(coordinates.x, coordinates.y, 1), Quaternion.identity);
     }
 }
