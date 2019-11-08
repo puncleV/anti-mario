@@ -13,15 +13,13 @@ public class DefenderButton : MonoBehaviour
 
     private void OnMouseDown()
     {
-        var sprite = GetComponent<SpriteRenderer>();
-        
-        sprite.color = Color.white;
-    }
+        var buttons = FindObjectsOfType<DefenderButton>();
 
-    private void OnMouseUp()
-    {
-        var sprite = GetComponent<SpriteRenderer>();
+        foreach (var button in buttons)
+        {
+            button.GetComponent<SpriteRenderer>().color = button.startColor;
+        }
         
-        sprite.color = startColor;
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
