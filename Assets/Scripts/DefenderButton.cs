@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DefenderButton : MonoBehaviour
 {
+    [SerializeField] private Defender defenderPrefab;
     private Color startColor;
     private void Start()
     {
@@ -21,5 +22,6 @@ public class DefenderButton : MonoBehaviour
         }
         
         GetComponent<SpriteRenderer>().color = Color.white;
+        FindObjectOfType<DefenderSpawner>().SetSelectedDefender(defenderPrefab);
     }
 }

@@ -2,9 +2,14 @@
 using UnityEditor;
 using UnityEngine;
 
-public class CoreGameArea : MonoBehaviour
+public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject defender;
+    [SerializeField] private Defender defender;
+
+    public void SetSelectedDefender(Defender defender)
+    {
+        this.defender = defender;
+    }
     private void OnMouseDown()
     {
         SpawnDefender(GetSquareClicked());
@@ -27,6 +32,6 @@ public class CoreGameArea : MonoBehaviour
     }
     private void SpawnDefender(Vector2 coordinates)
     {
-        GameObject newDefender = Instantiate(defender, new Vector3(coordinates.x, coordinates.y, 1), Quaternion.identity);
+        Defender newDefender = Instantiate(defender, new Vector3(coordinates.x, coordinates.y, 1), Quaternion.identity);
     }
 }
