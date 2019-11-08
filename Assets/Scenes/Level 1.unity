@@ -265,6 +265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40187f424dfe414488c9a837a9d2fef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 9204450970603101060, guid: ab5be7574dc58c0438b01350457065bf,
+    type: 3}
 --- !u!212 &180502577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -467,6 +469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40187f424dfe414488c9a837a9d2fef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 7528389781164066322, guid: 3ee5110fa3b2ad549af17bfb4d946e09,
+    type: 3}
 --- !u!212 &450244279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1381,7 +1385,7 @@ PrefabInstance:
     - target: {fileID: 7251720091175582301, guid: 5b273b288035d4149a384f67c7f72bd7,
         type: 3}
       propertyPath: m_Name
-      value: Core Game Area
+      value: Defender Spawner
       objectReference: {fileID: 0}
     - target: {fileID: 7251720091175582303, guid: 5b273b288035d4149a384f67c7f72bd7,
         type: 3}
