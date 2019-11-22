@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7251720091175582300}
   - component: {fileID: 7251720091175582302}
   m_Layer: 0
-  m_Name: Core Game Area
+  m_Name: Defender Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0450c744fd518458962c80367aee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defender: {fileID: 7496331062093473989, guid: ab5be7574dc58c0438b01350457065bf,
+  defender: {fileID: 1716115167888194649, guid: 6b573e47ae602f04f827eb1a0c36da35,
     type: 3}
 --- !u!61 &7251720091175582302
 BoxCollider2D:
