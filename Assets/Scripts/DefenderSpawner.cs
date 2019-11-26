@@ -5,6 +5,12 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     [SerializeField] private Defender defender;
+    private StarDisplay starDisplay;
+
+    private void Start()
+    {
+        starDisplay = FindObjectOfType<StarDisplay>();
+    }
 
     public void SetSelectedDefender(Defender defender)
     {
@@ -12,6 +18,9 @@ public class DefenderSpawner : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        if (starDisplay.Stars < defender.Cost) return;
+        
+        starDisplay.SpendStars(defender.Cost);
         SpawnDefender(GetSquareClicked());
     }
 

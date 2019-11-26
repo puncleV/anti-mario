@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,9 @@ using UnityEngine.UI;
 public class StarDisplay : MonoBehaviour
 {
     [SerializeField] private int stars = 100;
+
+    public int Stars => stars;
+
     private Text starText;
     void Start()
     {
@@ -21,7 +25,7 @@ public class StarDisplay : MonoBehaviour
 
     public void SpendStars(int count)
     {
-        if (stars - count < 0) return;
+        if (stars - count < 0) throw new ArgumentOutOfRangeException();
         
         stars -= count;
         UpdateDisplay();
