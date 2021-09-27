@@ -1,12 +1,10 @@
-﻿using System;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
     [SerializeField] private Defender defender;
     private StarDisplay starDisplay;
-
+    
     private void Start()
     {
         starDisplay = FindObjectOfType<StarDisplay>();
@@ -42,5 +40,6 @@ public class DefenderSpawner : MonoBehaviour
     private void SpawnDefender(Vector2 coordinates)
     {
         Defender newDefender = Instantiate(defender, new Vector3(coordinates.x, coordinates.y, 1), Quaternion.identity);
+        
     }
 }

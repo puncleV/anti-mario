@@ -7,7 +7,8 @@ public class Shooter : MonoBehaviour
     [SerializeField] private GameObject gun;
 
     private AttackerSpawner lineSpawner;
-    
+    private static readonly int Attacking = Animator.StringToHash("attacking");
+
     private void Start()
     {
         SetLaneSpawner();
@@ -17,17 +18,18 @@ public class Shooter : MonoBehaviour
     {
         if (IsAttackerInLane())
         {
-            Debug.Log("pew pew");
+           GetComponent<Animator>().SetBool(Attacking, true);
         }
         else
         {
-            Debug.Log("no pew pew");
+            GetComponent<Animator>().SetBool(Attacking, false);
+
         }
     }
 
     private bool IsAttackerInLane()
     {
-        return lineSpawner.transform.childCount <= 0;
+        return lineSpawner.transform.childCount > 0;
     }
 
     private void SetLaneSpawner()
