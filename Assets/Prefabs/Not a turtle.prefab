@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 592534690809500694}
   - component: {fileID: 592534690809500692}
   - component: {fileID: 8392652486118620144}
+  - component: {fileID: 3192917388378861106}
   m_Layer: 0
   m_Name: Not a turtle
   m_TagString: Untagged
@@ -173,3 +174,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3192917388378861106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592534690809500689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912d5b2e9a080d944b359dc6a26586ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVfx: {fileID: 0}
+  vfxLifetime: 0.3
+  hp: 200

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4466479339706407340}
   - component: {fileID: 1716115167888194649}
   - component: {fileID: 1937312302830996933}
+  - component: {fileID: 423519019292247669}
   m_Layer: 0
   m_Name: Defender Flower
   m_TagString: Untagged
@@ -108,6 +109,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &423519019292247669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636795998210287859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912d5b2e9a080d944b359dc6a26586ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVfx: {fileID: 0}
+  vfxLifetime: 0.3
+  hp: 130
 --- !u!1 &636795998600235728
 GameObject:
   m_ObjectHideFlags: 0

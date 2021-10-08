@@ -5,11 +5,11 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private GameObject deathVfx;
     [SerializeField] private float vfxLifetime = 0.3f;
-    [Range(100, 500)][SerializeField] private int hp = 100;
+    [Range(100, 500)][SerializeField] private float hp = 100;
 
-    public int Hp => hp;
+    public float Hp => hp;
 
-    public void DealDamage(int damage)
+    public void DealDamage(float damage)
     {
         hp -= damage;
         
