@@ -15,8 +15,12 @@ public class Health : MonoBehaviour
         
         if (hp <= 0)
         {
-            var explosion = Instantiate(deathVfx, transform.position, Quaternion.identity);
-            Destroy(explosion, vfxLifetime);
+            if (deathVfx != null)
+            {
+                var explosion = Instantiate(deathVfx, transform.position, Quaternion.identity);
+                Destroy(explosion, vfxLifetime);
+            }
+            
             Destroy(gameObject);
         }
     }

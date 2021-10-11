@@ -16,6 +16,7 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * Vector2.left);
+        UpdateAnimationState();
     }
 
     void SetMovementSpeed(float speed)
