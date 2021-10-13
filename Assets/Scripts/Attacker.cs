@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class Attacker : MonoBehaviour
@@ -16,6 +17,7 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * Vector2.left);
+ 
         UpdateAnimationState();
     }
 
